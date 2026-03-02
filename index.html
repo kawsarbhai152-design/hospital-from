@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Task Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="logo-container">
+    <div class="hospital-icon">
+        <span>+</span>
+    </div>
+    <div class="hospital-name">
+        <h2>A-hasan General Hospital</h2>
+        <p>Trust & Care</p>
+    </div>
+</div>
+
+    <div class="form-container">
+        <h1>Task registration form</h1>
+        
+        <form id="taskForm">
+            <div class="input-group">
+                <label for="userName">your name</label>
+                <input type="text" id="userName" placeholder="Enter the full name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="userEmail">Gmail (Email)</label>
+                <input type="email" id="userEmail" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="userPhone">phone number</label>
+                <input type="tel" id="userPhone" placeholder="017XXXXXXXX" required>
+            </div>
+
+            <div class="input-group">
+                <label for="taskDetail">job description</label>
+                <textarea id="taskDetail" rows="3" placeholder="Write down what needs to be done...." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit the task</button>
+        </form>
+
+        <div class="task-display-area">
+            <h2>Submitted tasks</h2>
+            <div id="taskContainer"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 **A-hasan General Hospital** | Always at your service</p>
+            <p>Address: Dhaka, Bangladesh | Helpline: +880 1863285469</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
